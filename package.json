@@ -1,0 +1,23 @@
+{
+  "name": "custom-vite",
+  "version": "1.0.0",
+  "description": "Small vite implementation.",
+  "main": "index.js",
+  "bin": {
+    "custom-vite": "./bin/vite"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19Qingfeng/custom-vite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/19Qingfeng/custom-vite/issues"
+  },
+  "homepage": "https://github.com/19Qingfeng/custom-vite#readme"
+}
