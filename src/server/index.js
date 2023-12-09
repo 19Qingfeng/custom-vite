@@ -15,7 +15,7 @@ async function createServer() {
   const server = {
     async listen(port, callback) {
       // 启动服务之前进行预构建
-      await runOptimize(config);
+      await runOptimize(config, server);
 
       http.createServer(app).listen(port, callback);
     }
@@ -27,8 +27,9 @@ async function createServer() {
  * 预构建
  * @param {*} config
  */
-async function runOptimize(config) {
-  await createOptimizeDepsRun(config);
+async function runOptimize(config, server) {
+  const depsMetaData = await createOptimizeDepsRun(config);
+  server._depMetaData = depsMetaData;
 }
 
 export { createServer };

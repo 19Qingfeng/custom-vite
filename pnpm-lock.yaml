@@ -3,11 +3,13 @@ lockfileVersion: 5.4
 specifiers:
   esbuild: ^0.19.8
   fs-extra: ^11.2.0
+  resolve: ^1.22.8
   serve-static: ^1.15.0
 
 devDependencies:
   esbuild: 0.19.8
   fs-extra: 11.2.0
+  resolve: 1.22.8
   serve-static: 1.15.0
 
 packages:
@@ -293,8 +295,19 @@ packages:
       universalify: 2.0.1
     dev: true
 
+  /function-bind/1.1.2:
+    resolution: {integrity: sha1-LALYZNl/PqbIgwxGTL0Rq26rehw=, tarball: function-bind/download/function-bind-1.1.2.tgz}
+    dev: true
+
   /graceful-fs/4.2.11:
     resolution: {integrity: sha1-QYPk6L8Iu24Fu7L30uDI9xLKQOM=, tarball: graceful-fs/download/graceful-fs-4.2.11.tgz}
+    dev: true
+
+  /hasown/2.0.0:
+    resolution: {integrity: sha1-9MUT1FSle3x+FlB3jeImsRcAVGw=, tarball: hasown/download/hasown-2.0.0.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      function-bind: 1.1.2
     dev: true
 
   /http-errors/2.0.0:
@@ -310,6 +323,12 @@ packages:
 
   /inherits/2.0.4:
     resolution: {integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=, tarball: inherits/download/inherits-2.0.4.tgz}
+    dev: true
+
+  /is-core-module/2.13.1:
+    resolution: {integrity: sha1-rQ11Msb+qdoevcgnQtdFJcYnM4Q=, tarball: is-core-module/download/is-core-module-2.13.1.tgz}
+    dependencies:
+      hasown: 2.0.0
     dev: true
 
   /jsonfile/6.1.0:
@@ -346,9 +365,22 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
+  /path-parse/1.0.7:
+    resolution: {integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=, tarball: path-parse/download/path-parse-1.0.7.tgz}
+    dev: true
+
   /range-parser/1.2.1:
     resolution: {integrity: sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=, tarball: range-parser/download/range-parser-1.2.1.tgz}
     engines: {node: '>= 0.6'}
+    dev: true
+
+  /resolve/1.22.8:
+    resolution: {integrity: sha1-tsh6nyqgbfq1Lj1wrIzeMh+lpI0=, tarball: resolve/download/resolve-1.22.8.tgz}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.13.1
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
   /send/0.18.0:
@@ -391,6 +423,11 @@ packages:
   /statuses/2.0.1:
     resolution: {integrity: sha1-VcsADM8dSHKL0jxoWgY5mM8aG2M=, tarball: statuses/download/statuses-2.0.1.tgz}
     engines: {node: '>= 0.8'}
+    dev: true
+
+  /supports-preserve-symlinks-flag/1.0.0:
+    resolution: {integrity: sha1-btpL00SjyUrqN21MwxvHcxEDngk=, tarball: supports-preserve-symlinks-flag/download/supports-preserve-symlinks-flag-1.0.0.tgz}
+    engines: {node: '>= 0.4'}
     dev: true
 
   /toidentifier/1.0.1:
