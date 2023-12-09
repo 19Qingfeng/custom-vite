@@ -1,11 +1,1 @@
-.
-├── README.md
-├── bin
-│   └── vite
-├── package.json
-└── src
-    ├── config.js
-    ├── index.js
-    └── server
-        ├── index.js
-        └── middleware
+# [深入浅出 Vite](https://juejin.cn/column/7310151273005334539)
